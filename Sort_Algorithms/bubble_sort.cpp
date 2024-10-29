@@ -19,21 +19,21 @@ void bubble(vector<int>& A, int n) {
         }
     }
 }
-// int main() {
-//     srand(time(NULL));
-//     vector<int> A;
-//     int n = 20;
-//     for (int i=0;i<n;i++) {
-//         int a = rand() % 100 + 1;
-//         A.push_back(a);
-//     }
-//     cout << "No sort: ";
-//     for (int x : A) {
-//         cout << x << " ";
-//     }
-//     bubble(A,n);
-//     cout << "\nApply bubble sort: ";
-//     for (int x : A) {
-//         cout << x << " ";
-//     }
-// }
+int main() {
+    srand(time(NULL));
+    vector<int> A;
+    int n = 20;
+    for (int i=0;i<n;i++) {
+        int a = rand() % 100 + 1;
+        A.push_back(a);
+    }
+    cout << "No sort: ";
+    for (int x : A) {
+        cout << x << " ";
+    }
+    bubble(A,n);
+    cout << "\nApply bubble sort: ";
+    for (int x : A) {
+        cout << x << " ";
+    }
+}
