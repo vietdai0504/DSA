@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/KTMT/DSA/Binary_tree",
-      "program": "d:/KTMT/DSA/Binary_tree/build/Debug/outDebug",
+      "cwd": "d:/KTMT/DSA/Heap",
+      "program": "d:/KTMT/DSA/Heap/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
