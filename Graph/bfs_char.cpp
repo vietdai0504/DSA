@@ -35,7 +35,7 @@ void bfs(char u) {
 }
 
 int main() {
-    int n=6, m=5;
+    int n=6, m=13;
     for (char c = 'A'; c < 'A' + n;c++) {
         is_visited[c] = false;
     }
