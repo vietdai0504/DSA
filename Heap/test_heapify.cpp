@@ -5,33 +5,37 @@ void swap(int& a, int& b) {
     a = b;
     b = temp;
 }
-void heapify(int heap[], int i, int heapSize) {
-    int max = i, left = 2*i+1, right = 2*i+2;
-    if (left < heapSize && heap[left] > heap[i]){
+void heapify(int heap[], int i, int sizeHeap) {
+    int max=i, left = 2*i+1, right = 2*i+2;
+    if (left < sizeHeap && heap[left] > heap[i]) {
         max = left;
     }
-    if (right < heapSize && heap[right] > heap[max]){
+    if (right < sizeHeap && heap[right] > heap[max]) {
         max = right;
     }
     if (max!=i) {
-        swap(heap[max], heap[i]);
-        heapify(heap, max, heapSize);
+        swap(heap[max],heap[i]);
+        heapify(heap,max,sizeHeap);
     }
 }
-void buildHeap(int heap[], int heapSize) {
-    for (int i=heapSize/2;i>=0;i--) {
-        heapify(heap, i, heapSize);
+void buildHeap(int heap[], int sizeHeap) {
+    for (int i=sizeHeap/2;i>=0;i--) {
+        heapify(heap,i,sizeHeap);
+    }
+}
+void heapSort(int heap[], int sizeHeap) {
+    buildHeap(heap,sizeHeap);
+    for (int i=sizeHeap-1;i>=0;i--) {
+        swap(heap[0],heap[i]);
+        heapify(heap,0,i);
     }
 }
 int main() {
-    int heap[] = {3,6,78,2,3,5,9,10,34};
-    int heapSize = sizeof(heap)/sizeof(int);
-    for (int x:heap) {
-        cout << x << " ";
-    }
-    cout << endl;
-    buildHeap(heap,heapSize);
-    for (int x:heap) {
+    int heap[] = {4,5,2,7,8,10,54,3,1};
+    int sizeHeap = sizeof(heap)/sizeof(int);
+    // buildHeap(heap,sizeHeap);
+    heapSort(heap,sizeHeap);
+    for (int x : heap) {
         cout << x << " ";
     }
 }
