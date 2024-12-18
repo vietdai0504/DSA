@@ -47,5 +47,5 @@ int main() {
 + Vòng lặp cuối i = 0, i<101 -> 101 + 1 phép so sánh -> trường hợp xấu nhất
                              -> 1 + 1 phép so sánh (i < 101 và B[i] > 1 đúng ngay lần đầu)       
 => TỔNG: Trường hợp xấu nhất: (1) + (n+1) + (101+1) = n + 104 phép so sánh
-         Trường hợp tốt nhất: (1) + (n+1) + (1+1)   = n + 4 phép so sánh
+         Trường hợp tốt nhất: 1 phép so sánh (nếu n>100)
 */

@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/KTMT/DSA/CK",
-      "program": "d:/KTMT/DSA/CK/build/Debug/outDebug",
+      "cwd": "d:/KTMT/DSA/CK/2016",
+      "program": "d:/KTMT/DSA/CK/2016/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
